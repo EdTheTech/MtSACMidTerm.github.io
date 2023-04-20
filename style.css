@@ -1,0 +1,217 @@
+/*
+GOOGLE FONTS
+font-family: 'Source Code Pro', monospace; for h2 h3
+font-family: 'Permanent Marker', cursive; for h1
+font-family: 'Orbitron', sans-serif; for body
+
+COLOR PALETTE
+Choose a color palette and paste the hex codes here to use below
+https://coolors.co/
+#09090b Dark color for fonts on a light background
+#FFFFFF White background for background in education
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+https://coolors.co/bbd8f1-373743-1fc130-b836e7-931028
+#BBD8F1 columbia blue for background in profile
+#373743 jet for background in projects
+#1FC130 dark pastel green for text in projects
+#F5F5F5 white smoke for background education
+#B836E7 electric purple for links
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+  
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  img {
+    width: 300px;
+  }
+  a {
+    /* color: ; */
+    color:#B836E7;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h1 {
+    font-family:'Permanent Marker', cursive;
+    font-size: 5em;
+    line-height: 1;
+  }
+  h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.25em;
+  }
+  header h2 {
+    font-size: 2em;
+  }
+  h1, h2 {
+    font-weight: 700;
+    margin: 0;
+  }
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  h3 {
+    font-family: 'Source Code Pro', monospace;
+ 
+    margin-bottom: 0;
+  }
+  .item-details h3 + p {
+    font-style: italic;
+  }
+  .item-details h3 ~ p {
+    margin: 0;
+  }
+  .divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+  
+  /* Profile
+  ------------------------------------*/
+  header {
+    /* background: ; */
+    /* color: ; */
+    background: #BBD8F1;
+    color: #09090b;
+  }
+  
+  
+  /* Projects
+  ------------------------------------*/
+  .projects {
+    /* background: ; */
+    background:#373743 ;
+    color: #1FC130;
+  }
+  .projects a {
+    /* color: ; */
+    color: #B836E7;
+  }
+  .projects .btn {
+    /* color: ; */
+    /* background: ; */
+    background:#1FC130;
+    color:#09090b;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+
+    border: 2px black solid;
+    text-decoration: underline;
+  }
+  .projects .btn:hover {
+    /* background: ; */
+    background: #B836E7;
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .project-item h3 {
+    margin-top: 0;
+  }
+
+  .projects h2{
+    text-decoration: underline;
+  }
+  
+  /* Education
+  ------------------------------------*/
+  .education {
+    /* background-color: ; */
+    background-color: #FFFFFF;
+    background-position: top right;
+    padding-bottom: 100px;
+  }
+  .education p {
+    width: 60%;
+  }
+
+  .education h3{
+    text-decoration: underline;
+  }
+  
+  
+  /* Contact Info
+  ------------------------------------*/
+  footer {
+    /* background: ; */
+    /* color: ; */
+    background:#343434;
+    color:#F7FFF7;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+    /* color: ; */
+    color:#F7FFF7;
+  }
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 2em;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+  img {
+    width: 200px;
+  }
+}
